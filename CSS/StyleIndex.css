@@ -8,6 +8,8 @@ body{
   margin: 0;
 }
 
+/*Barra de Menu*/
+
 .menuBar{
   background-color: #1b262c;
   width: 100%;
@@ -15,14 +17,18 @@ body{
 }
 
 .bottonSeccion{
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
   text-align: right;
   color: #c8cbcf;
 }
 
+.navIcon{
+  display: none;
+}
+
 a{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
 
 a:link, a:visited {
@@ -33,6 +39,137 @@ a:link, a:visited {
 
 a:link:active, a:visited:active {
   color: #c8cbcf;
+}
+
+ .optionsNav:hover{
+   color: #ffffff;
+ }
+
+/*Seccion Superior*/
+
+.bodyHead{
+  background-color: #1b262c;
+  padding: 10px 25px 10px 25px;
+}
+
+.headerBodyTopH1{
+  font-size: 3.5625rem;
+  color: #ffffff;
+  font-family: 'Roboto Condensed', cursive;
+  margin-bottom: 0.125rem;
+}
+
+.headerBodyTop{
+  color: #ffffff;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+h2, .textBodyTop{
+  color: #c8cbcf;
+}
+
+.profile{
+  width: 45%;
+  display: inline-block;
+}
+
+.profileIMG{
+  width: 60%;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+
+/*Estilos Seccion de Informacion*/
+
+h3{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+  color: #25282b;
+  font-size: 1.4rem;
+}
+
+.bodyInfo{
+  padding: 0.9375rem 1.5625rem 0.9375rem 1.5625rem;
+}
+
+hr{
+  border-style: dotted;
+  border-width: 0.625rem;
+  border-color: #0f4c75;
+  width: 5%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/*Seccion Tecnologias*/
+
+.techCards{
+  justify-content: center;
+  display: flex;
+  margin: 2rem;
+}
+
+.technologies{
+  width: 20%;
+  margin: 0.625rem;
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+}
+
+.divText{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.techIMG{
+  margin: auto;
+  display: block;
+  width: 35%;
+}
+
+/*Seccion Servicios*/
+
+.services:hover{
+  border-width: 0.125rem;
+}
+
+.servicesCards{
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.services{
+  width: 35%;
+  display: inline-block;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #edebeb;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+ul{
+  margin: 0.25rem;
+}
+
+/*Seccion Contact*/
+
+.miniIconText{
+  display: inline-block;
+}
+
+i{
+  margin: 0.5rem;
 }
 
 .contactLink{
@@ -49,87 +186,7 @@ a:link:active, a:visited:active {
   color: #25282b;
 }
 
-.bodyHead{
-  background-color: #1b262c;
-  padding: 10px 25px 10px 25px;
-}
-
-.bodyInfo{
-  padding: 15px 25px 15px 25px;
-}
-
-.headerBodyTopH1{
-  font-size: 3.5625rem;
-  color: #ffffff;
-  font-family: 'Roboto Condensed', cursive;
-}
-
-.headerBodyTop{
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 5px;
-}
-
-h2, .textBodyTop{
-  color: #c8cbcf;
-}
-
-p{
-  text-align: justify;
-  color: #25282b;
-}
-
-.technologies{
-  width: 19%;
-  display: inline-block;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  border-color: #000000;
-  background-color: #edebeb;
-}
-
-.divText{
-  text-align: center;
-}
-
-.services{
-  width: 49%;
-  display: inline-block;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  border-color: #000000;
-  background-color: #edebeb;
-}
-
-.textTech{
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-hr{
-  border-style: dotted;
-  border-width: 10px;
-  border-color: #0f4c75;
-  width: 5%;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
-
-img{
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 40px;
-}
-
-.miniIcon{
-  width: 20px;
-  height: 30px;
-}
-
-.miniIconText{
-  display: inline-block;
-}
+/*Seccion Footer*/
 
 .lastBody{
   background-color: #1b262c;
@@ -142,10 +199,49 @@ img{
   color: #c8cbcf;
 }
 
-.services:hover{
-  border-width: 3px 3px 3px 3px;
+/*Para Dispositivos Moviles*/
+
+@media only screen and (max-width: 650px){
+
+  /*Ajustando Barra de Navegacion*/
+
+  .navIcon{
+    display: inline;
+  }
+
+  .navText{
+    display: none;
+  }
 }
 
-.technologies:hover{
-  border-width: 3px 3px 3px 3px;
+@media only screen and (max-width: 768px){
+
+  /*Ajustando Seccion Servicios*/
+
+  .servicesCards{
+    display: block;
+  }
+
+  .services{
+    width: 100%;
+    display: block;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #edebeb;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+
+/*Ajustando Seccion Pefil*/
+
+  .profile{
+    width: 75%;
+    display: block;
+    margin: auto;
+  }
 }
